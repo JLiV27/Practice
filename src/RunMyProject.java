@@ -1,10 +1,8 @@
 public class RunMyProject {
-
-
+    int x = 0;
 
     public static void main(String[] args) {
         RunMyProject rmp = new RunMyProject();
-
     }
 
     public RunMyProject(){
@@ -19,11 +17,8 @@ public class RunMyProject {
 
         System.out.println("------------------------------");
 
-        int x = 0;
-
-        while(Math.abs(array[x] - array[x+1]) < 500){
-            System.out.println(array[x] - array[x+1]);
-
+        while(Math.abs(array[x] - array[x+1]) < 500 && x < 9){
+            System.out.println(Math.abs(array[x] - array[x+1]));
             x++;
         }
     }
